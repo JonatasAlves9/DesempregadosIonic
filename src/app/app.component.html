@@ -1,3 +1,51 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  
+  <ion-menu content-id="menu" type="reveal">
+    
+    <ion-header style="height: 60px;">
+      
+      <ion-item>
+        <ion-avatar slot="start" >
+          <img src="https://s2.glbimg.com/uqq3aZOz8PK-ec-FbOV8vTnKNeA=/0x0:768x454/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/E/6/GCtqZpRAihRx40NT239w/carteira1000.jpeg">
+        </ion-avatar>
+        <ion-label>Usuário</ion-label>
+      </ion-item>
+    </ion-header>
+    <ion-content class="ion-padding-top">
+      <ion-list >
+        <ion-item>
+          <ion-icon slot="start" name="archive-outline"></ion-icon>
+          <ion-label>Empregos</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="archive-outline"></ion-icon>
+          <ion-label>Inserir Empregos </ion-label>
+        </ion-item>
+        <ion-item >
+          <ion-icon  slot ="start" name="notifications-outline"></ion-icon>
+          <ion-label>Notificações</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="chatbox-outline"></ion-icon>
+          <ion-label>Chat</ion-label>
+        </ion-item>
+        <ion-item> 
+          <ion-icon slot="start" name="heart-outline"></ion-icon>
+          <ion-label>Favoritos</ion-label>
+        </ion-item>
+      </ion-list>
+      <hr/>
+      <ion-title>Configurações</ion-title>
+      <ion-list >
+        <ion-item>Ajuda e Contato</ion-item>
+        <ion-item>Sobre Nós</ion-item>
+        <ion-item>Termo de uso</ion-item>
+        <ion-item>Configurações</ion-item>
+        <ion-item>Sair</ion-item>
+      </ion-list>
+    </ion-content>
+
+  </ion-menu>
+  <ion-router-outlet id="menu"></ion-router-outlet>
+  
 </ion-app>
