@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'pag-regiao',
+    loadChildren: () => import('./pag-regiao/pag-regiao.module').then( m => m.PagRegiaoPageModule)
+  },
 ];
 
 @NgModule({
